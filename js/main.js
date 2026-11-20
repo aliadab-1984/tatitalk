@@ -23,7 +23,7 @@ function showReview(step) {
 }
 document.getElementById("prevReview").addEventListener("click", () => showReview(-1));
 document.getElementById("nextReview").addEventListener("click", () => showReview(1));
-const revealElements = document.querySelectorAll('.card');
+const revealElements = document.querySelectorAll('.reveal');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
