@@ -570,7 +570,7 @@ th: 40%;
 }
 
 .email {
-    background: #465cff;
+    background: transparent;
 }
 
 
@@ -1372,4 +1372,74 @@ padding: 8px 12px;
 
 #hero-title {
     transition: opacity 0.6s ease;
+}
+.bale-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+.contact-form-section {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    color: #e76f9a;
+    margin-bottom: 10px;
+}
+
+.contact-form-section p {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 14px;
+    direction: rtl;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background: #e76f9a;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #d65382;
+    transform: translateY(-2px);
+}
+.gmail-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
 }
