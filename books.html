@@ -11,8 +11,8 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/books.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/books.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
         </a>
 
         <nav class="nav">
-            <a href="../index.html#home">خانه ⌂</a>
+            <a href="index.html#home">خانه ⌂</a>
             <a class="home-link" href="#books">کتاب‌ها 🎓</a>
             <a href="#classes">کلاس‌ها ☷</a>
             <a href="#about">درباره من ♟️</a>
@@ -48,7 +48,7 @@
 
         <!-- بنر کتابخانه -->
         <section class="library-hero">
-            <img src="../assets/images/library-banner.jpg"
+            <img src="assets/images/library-banner.jpg"
                  alt="کتابخانه تاتی‌تاک">
         </section>
 
@@ -56,17 +56,17 @@
         <!-- انتخاب نوع کتاب -->
         <div class="book-tabs">
 
-            <a href="#student-books" class="book-tab student-tab">
+            <a href="#student-books" class="book-tab student-tab active-tab">
                 <span>کتاب‌های شاگردها</span>
                 <small>Student Books</small>
-                <img src="../assets/images/student-tab.png"
+                <img src="assets/images/student-tab.png"
                      alt="شاگرد">
             </a>
 
-            <a href="#teacher-books" class="book-tab teacher-tab active-tab">
+            <a href="#teacher-books" class="book-tab teacher-tab ">
                 <span>کتاب‌های معلم‌ها</span>
                 <small>Teacher Books</small>
-                <img src="../assets/images/teacher-tab.png"
+                <img src="assets/images/teacher-tab.png"
                      alt="معلم">
             </a>
 
@@ -74,10 +74,19 @@
 
 
         <!-- کتاب‌های معلم‌ها -->
-        <section class="teacher-books" id="teacher-books">
+        <section id="teacher-books" style="display: none;">
+            <div class="section-title">
+               <div>
+                    <h2>کتاب‌های معلم‌ها</h2>
+                    <small>Teacher Books</small>
+               </div>
+
+               <img src="assets/images/teacher-tab.png" alt="معلم">
+            </div>
+            <div class="teacher-books-grid">
 
             <article class="library-book">
-                <img src="../assets/images/teacher-english.jpg"
+                <img src="assets/images/teacher-english.jpg"
                      alt="English for Teachers">
 
                 <div class="library-book-info">
@@ -92,7 +101,7 @@
 
 
             <article class="library-book">
-                <img src="../assets/images/teacher-math.jpg"
+                <img src="assets/images/teacher-math.jpg"
                      alt="Math for Teachers">
 
                 <div class="library-book-info">
@@ -107,7 +116,7 @@
 
 
             <article class="library-book">
-                <img src="../assets/images/teacher-classroom.jpg"
+                <img src="assets/images/teacher-classroom.jpg"
                      alt="Classroom Management">
 
                 <div class="library-book-info">
@@ -122,7 +131,7 @@
 
 
             <article class="library-book">
-                <img src="../assets/images/teacher-fun.jpg"
+                <img src="assets/images/teacher-fun.jpg"
                      alt="Teaching with Fun">
 
                 <div class="library-book-info">
@@ -134,6 +143,7 @@
                     </button>
                 </div>
             </article>
+            </div>
 
         </section>
 
@@ -147,7 +157,7 @@
                     <small>Student Books</small>
                 </div>
 
-                <img src="../assets/images/student-tab.png"
+                <img src="assets/images/student-tab.png"
                      alt="شاگرد">
             </div>
 
@@ -155,22 +165,22 @@
             <div class="student-books-grid">
 
                 <article class="library-book">
-                    <img src="../assets/images/student-english.jpg"
+                    <img src="assets/images/student-english.jpg"
                          alt="English Book">
 
                     <div class="library-book-info">
                         <h2>English Book</h2>
                         <h3>کتاب زبان انگلیسی</h3>
                         <p>یادگیری آسان و سرگرم‌کننده زبان انگلیسی</p>
-                        <button type="button" class="book-button">
-                            مشاهده جزئیات <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
+                        <a href="book-view.html" class="book-button">
+    مشاهده جزئیات <i class="fa-solid fa-magnifying-glass"></i>
+</a>
                     </div>
                 </article>
 
 
                 <article class="library-book">
-                    <img src="../assets/images/student-math.jpg"
+                    <img src="assets/images/student-math.jpg"
                          alt="Math Fun">
 
                     <div class="library-book-info">
@@ -185,7 +195,7 @@
 
 
                 <article class="library-book">
-                    <img src="../assets/images/student-science.jpg"
+                    <img src="assets/images/student-science.jpg"
                          alt="Science for Kids">
 
                     <div class="library-book-info">
@@ -200,7 +210,7 @@
 
 
                 <article class="library-book">
-                    <img src="../assets/images/student-stories.jpg"
+                    <img src="assets/images/student-stories.jpg"
                          alt="Stories for Kids">
 
                     <div class="library-book-info">
@@ -246,6 +256,7 @@
     </footer>
 
 </div>
+<script src="js/books.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,215 @@
+<!doctype html>
+
+<html lang="fa" dir="rtl"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#eaf4ff"><title>Tatitalk | English Book</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/book-view.css">
+
+</head><body><div class="site-shell"><!-- هدر اصلی سایت -->
+<header class="topbar">
+
+    <a class="brand" href="index.html#home" aria-label="Tatitalk خانه">
+        <span class="brand-book">📚</span>
+
+        <span class="brand-name">
+            <b>Tatitalk</b>
+            <small>Learn • Play • Grow</small>
+        </span>
+    </a>
+
+    <nav class="nav">
+        <a href="index.html#home">خانه ⌂</a>
+        <a class="active" href="books.html">کتاب‌ها 🎓</a>
+        <a href="index.html#classes">کلاس‌ها ☷</a>
+        <a href="index.html#about">درباره من ♟️</a>
+        <a href="index.html#contact">تماس با ما ✉️</a>
+    </nav>
+
+    <div class="actions">
+        <a class="cart" href="books.html">🛒<i>0</i></a>
+        <a class="login" href="index.html#contact">
+            ورود / ثبت‌نام ♟️
+        </a>
+    </div>
+
+</header>
+
+
+<!-- محتوای اصلی صفحه کتاب -->
+<main class="book-view-container">
+
+    <!-- معرفی کتاب -->
+    <section class="book-intro">
+
+        <div class="book-intro-image">
+            <img src="assets/images/student-english.jpg"
+                 alt="English Book">
+        </div>
+
+        <div class="book-intro-info">
+
+            <span class="book-label">کتاب آموزشی زبان</span>
+
+            <h1>English Book</h1>
+
+            <p>
+                در این بخش می‌توانید صفحات کتاب را مشاهده کنید،
+                به فایل‌های صوتی مربوط به هر صفحه گوش دهید
+                و همراه با محتوای آموزشی تمرین کنید.
+            </p>
+
+            <div class="book-info-tags">
+                <span>📚 آموزش زبان</span>
+                <span>🎧 فایل صوتی</span>
+                <span>🧒 مناسب زبان‌آموزان</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- گالری صفحات کتاب -->
+    <section class="book-content-section">
+
+        <div class="book-content-heading">
+            <h2>صفحات کتاب 📖</h2>
+            <p>برای مشاهده هر صفحه، تصویر کوچک آن را انتخاب کنید.</p>
+        </div>
+
+        <div class="gallery-wrapper">
+
+            <button class="gallery-arrow"
+                    id="gallery-next"
+                    type="button"
+                    aria-label="صفحات بعدی">
+                ❮
+            </button>
+
+            <div class="book-pages-gallery" id="pages-gallery">
+            </div>
+
+            <button class="gallery-arrow"
+                    id="gallery-prev"
+                    type="button"
+                    aria-label="صفحات قبلی">
+                ❯
+            </button>
+
+        </div>
+
+
+        <!-- نمایش صفحه انتخاب شده -->
+        <div class="book-page-viewer">
+
+            <!-- تصویر اصلی کتاب -->
+            <div class="book-page-display">
+
+                <div class="book-page-image-wrapper">
+                    <img id="current-page-image"
+                         src=""
+                         alt="صفحه کتاب">
+                </div>
+
+            </div>
+
+
+            <!-- اطلاعات صفحه -->
+            <div class="book-page-details">
+
+                <!-- فایل صوتی -->
+                <div class="book-audio-section">
+
+                    <h3>🔊 صداهای این صفحه</h3>
+
+                    <div id="audio-container">
+                        <p>فایل صوتی این صفحه هنوز اضافه نشده است.</p>
+                    </div>
+
+                </div>
+
+
+                <!-- QR Code -->
+                <div class="book-qr-section">
+
+                    <div id="qr-container">
+                        <div class="qr-placeholder">QR</div>
+                    </div>
+
+                    <div class="qr-description">
+                        <h3>📱 دسترسی سریع</h3>
+
+                        <p>
+                            برای گوش دادن به فایل صوتی در تلفن همراه،
+                            QR Code را اسکن کنید.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- حرکت بین صفحات -->
+        <div class="book-bottom-navigation">
+
+            <button id="prev-page" type="button">
+                ❮ صفحه قبلی
+            </button>
+
+            <div class="page-counter">
+                📚 صفحه
+                <span id="page-number">1</span>
+                از
+                <span id="total-pages">20</span>
+            </div>
+
+            <button id="next-page" type="button">
+                صفحه بعدی ❯
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- فوتر اصلی سایت -->
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+            📚 <b>Tatitalk</b>
+            <small>Learn • Play • Grow</small>
+        </div>
+
+        <p>
+            💗 آموزش زبان، سرمایه‌ای برای آینده فرزندان ماست
+        </p>
+
+        <nav>
+            <a href="index.html#home">خانه</a>
+            <a href="books.html">کتاب‌ها</a>
+            <a href="index.html#about">درباره من</a>
+            <a href="index.html#contact">تماس با ما</a>
+        </nav>
+
+    </div>
+
+    <p class="copyright">
+        ⭐ ©️ 2026 Tatitalk. تمامی حقوق محفوظ است. ⭐
+    </p>
+
+</footer>
+
+</div><script src="js/book-view.js"></script></body>
+</html>

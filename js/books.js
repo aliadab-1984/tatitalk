@@ -1,19 +1,22 @@
-const tabs = document.querySelectorAll(".tab");
-const teacherGrid = document.querySelector(".teacher-grid");
-const studentsArea = document.querySelector(".students-area");
+const tabs = document.querySelectorAll(".book-tab");
+const teacherBooks = document.getElementById("teacher-books");
+const studentBooks = document.getElementById("student-books");
 
 tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    tabs.forEach((item) => item.classList.remove("active"));
-    tab.classList.add("active");
+    tab.addEventListener("click", (event) => {
+        event.preventDefault();
 
-    const target = tab.dataset.target;
-    if (target === "teacher-books") {
-      teacherGrid.scrollIntoView({ behavior: "smooth", block: "start" });
-    } else {
-      studentsArea.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  });
+        tabs.forEach((item) => item.classList.remove("active-tab"));
+        tab.classList.add("active-tab");
+
+        if (tab.classList.contains("teacher-tab")) {
+            teacherBooks.style.display = "grid";
+            studentBooks.style.display = "none";
+        } else {
+            teacherBooks.style.display = "none";
+            studentBooks.style.display = "block";
+        }
+    });
 });
 
 const modal = document.getElementById("book-modal");
