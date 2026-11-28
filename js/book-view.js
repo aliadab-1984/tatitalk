@@ -3,12 +3,32 @@ Tatitalk - Book Viewer
 ===================================== */
 
 // صفحات نمونه کتاب
-const pages = Array.from({ length: 20 }, (_, index) => ({
-number: index + 1,
-image: "assets/images/book-pages/page-${index + 1}.jpg",
-audios: [],
-qr: ""
-}));
+const pages = [
+    {
+        number: 1,
+        image: "assets/images/english-book-pages/page-1.jpg",
+        audios: [],
+        qr: ""
+    },
+    {
+        number: 2,
+        image: "assets/images/english-book-pages/page-2.jpg",
+        audios: [],
+        qr: ""
+    },
+    {
+        number: 3,
+        image: "assets/images/english-book-pages/page-3.jpg",
+        audios: [],
+        qr: ""
+    },
+    {
+        number: 4,
+        image: "assets/images/english-book-pages/page-4.jpg",
+        audios: [],
+        qr: ""
+    }
+];
 
 // عناصر صفحه
 const gallery = document.getElementById("pages-gallery");

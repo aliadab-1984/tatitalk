@@ -463,47 +463,57 @@ img {
     direction: ltr;
     line-height: 1;
 }
-
-/* =========================
-   کتاب‌ها و کلاس‌ها
+/* کتاب‌ها و کلاس‌ها
 ========================= */
+
+/* کارت کتاب‌های آموزشی */
 
 .books-card {
     min-height: 300px;
-
     background: linear-gradient(135deg, #e4f2ff, #dceeff);
     border-color: #c2ddff;
+    position: relative;
+    padding-bottom: 55px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-}
-.book-copy {
+
     text-align: center;
-    flex: 1;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
+    gap: 15px;
 }
 
-.book-copy .blue-button {
-    margin-top: auto;
+.books-card h2 {
+    margin-bottom: 5px;
 }
 
-.book-copy p {
-    font-size: 12px;
-    line-height: 1.9;
-}
-
-.books-card>img {
+.books-card > img {
     width: 40%;
-    height: 170px;
+    height: 150px;
     object-fit: cover;
     border-radius: 15px;
 }
+
+.books-card .book-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+.books-card p {
+    font-size: 12px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+.books-card .blue-button {
+    margin-top: auto;
+}
+
+
+/* کارت کلاس‌های آموزشی */
 
 .classes-card {
     min-height: 230px;
@@ -522,7 +532,13 @@ img {
     font-size: 12px;
     line-height: 2.2;
 }
-
+.books-card .blue-button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+}
 /* =========================
    نظرات زبان‌آموزان
 ========================= */
@@ -1011,6 +1027,16 @@ img {
     .feature-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    #about {
+        grid-template-columns: 
+    repeat(2,minmax(0,1fr));
+    }
+    #about .method-card {
+        grid-column: 1 / -1;
+    }
+    #testimonials {
+        grid-column: 1 / -1;
+    }
 
     .contact-layout {
         grid-template-columns: 1fr 1fr;
@@ -1039,6 +1065,7 @@ img {
     }
 }
 
+
 /* =========================
    موبایل
 ========================= */
@@ -1048,12 +1075,29 @@ img {
     body {
         padding-top: 115px;
     }
+    #about {
+    grid-template-columns: 1fr;
+}
+
+#about .method-card {
+    grid-column: auto;
+}
 
     .site-shell {
         width: 100%;
         padding: 0 8px;
         overflow: hidden;
     }
+    .books-card .blue-button {
+    right: 15px;
+    left: auto;
+    bottom: 15px;
+    transform: none;
+}
+
+.books-card .blue-button:hover {
+    transform: translateY(-4px);
+}
 
     .topbar {
         border-radius: 0 0 18px 18px;
@@ -1379,4 +1423,7 @@ body {
 .books-card .blue-button {
     align-self: center;
     margin-top: auto;
+}
+.books-card .blue-button:hover {
+    transform: translate(-50%, -4px);
 }
